@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC NDA-II Exam 2025 - SarkariResult</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: url('https://images.unsplash.com/photo-1580130732478-4d0397529d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            line-height: 1.6;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 32, 78, 0.85);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 10px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        header {
+            background: linear-gradient(135deg, rgba(0, 51, 102, 0.9), rgba(0, 87, 146, 0.9));
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            opacity: 0.15;
+            z-index: -1;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            letter-spacing: 0.5px;
+        }
+        
+        .post-date {
+            font-size: 15px;
+            opacity: 0.9;
+            color: #ffcc00;
+        }
+        
+        .short-info {
+            background-color: rgba(0, 51, 102, 0.4);
+            padding: 18px;
+            border-left: 5px solid #ffcc00;
+            margin-bottom: 25px;
+            backdrop-filter: blur(5px);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h2 {
+            color: #ffcc00;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(255, 204, 0, 0.3);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            font-size: 22px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: rgba(0, 32, 78, 0.5);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        th, td {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: rgba(0, 51, 102, 0.7);
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        
+        td {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .highlight-box {
+            background-color: rgba(0, 51, 102, 0.5);
+            padding: 18px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 5px solid #ffcc00;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(1, 2, 17, 0.9), rgba(92, 103, 113, 0.9));
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 12px 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, rgba(0, 51, 102, 0.9), rgba(0, 87, 146, 0.9));
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        ol, ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 10px;
+            padding-left: 5px;
+        }
+        
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        
+        .vacancy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .vacancy-item {
+            background: rgba(0, 51, 102, 0.6);
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+        }
+        
+        .vacancy-item strong {
+            color: #ffcc00;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .vacancy-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            body {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>UPSC National Defence Academy & Naval Academy (NDA-II) Examination 2025</h1>
+            <div class="post-date">Post Date/Update: 28 May 2025 | 06:55 PM</div>
+        </header>
+        
+        <div class="short-info">
+            <strong>Short Information:</strong> Union Public Service Commission UPSC has released the National Defence Academy and Naval Academy NDA / NA Second Examination 2025. Those Candidate Are Interested to this Recruitment Can Apply Online from 28 May 2025 to 17 June 2025.
+        </div>
+        
+        <h2>Important Dates</h2>
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Application Begin</td>
+                <td>28/05/2025</td>
+            </tr>
+            <tr>
+                <td>Last Date for Apply Online</td>
+                <td>17/06/2025 (upto 06:00 PM only)</td>
+            </tr>
+            <tr>
+                <td>Fee Payment Last Date</td>
+                <td>17/06/2025</td>
+            </tr>
+            <tr>
+                <td>Correction Form</td>
+                <td>As per Schedule</td>
+            </tr>
+            <tr>
+                <td>Exam Date</td>
+                <td>14/09/2025</td>
+            </tr>
+            <tr>
+                <td>Admit Card Available</td>
+                <td>Before Exam</td>
+            </tr>
+        </table>
+        
+        <h2>Application Fee</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Fee</th>
+            </tr>
+            <tr>
+                <td>General / OBC</td>
+                <td>₹100/-</td>
+            </tr>
+            <tr>
+                <td>SC / ST</td>
+                <td>₹0/- (Exempted)</td>
+            </tr>
+        </table>
+        <p><strong>Payment Modes:</strong> Net Banking, Debit Card, Credit Card and Offline Fee Mode Through E Challan</p>
+        
+        <h2>UPSC NDA II Eligibility 2025</h2>
+        <table>
+            <tr>
+                <th>Wing</th>
+                <th>Educational Qualification</th>
+            </tr>
+            <tr>
+                <td>Army Wing</td>
+                <td>Passed/Appearing 10+2 Exam in Any Recognized Board in India</td>
+            </tr>
+            <tr>
+                <td>Airforce & Naval Wing</td>
+                <td>Passed/Appearing 10+2 Exam with Physics & Math Subjects</td>
+            </tr>
+        </table>
+        
+        <div class="highlight-box">
+            <h3>Age Limit (as on 01/01/2026)</h3>
+            <p><strong>Candidate Not be Born Before:</strong> 02/01/2007</p>
+            <p><strong>Candidates Not be Born After:</strong> 01/01/2010</p>
+            <p><em>Age Relaxation Extra as per NDA II Exam Notification 2025 Recruitment Rules</em></p>
+        </div>
+        
+        <h2>UPSC NDA II Exam 2025: Vacancy Details</h2>
+        <div class="vacancy-grid">
+            <div class="vacancy-item">
+                <strong>Army</strong>
+                <span>208 Posts</span>
+            </div>
+            <div class="vacancy-item">
+                <strong>Navy</strong>
+                <span>42 Posts</span>
+            </div>
+            <div class="vacancy-item">
+                <strong>Airforce</strong>
+                <span>120 Posts</span>
+            </div>
+            <div class="vacancy-item">
+                <strong>Naval Academy</strong>
+                <span>36 Posts</span>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: -10px;"><strong>Total Vacancies: 406 Posts</strong></p>
+        
+        <h2>How to Fill NDA II Exam Online Form 2025</h2>
+        <ol>
+            <li><strong>Photo Instruction:</strong> The photograph should not be more than 10 days old with candidate's name and date written on it</li>
+            <li>Complete One Time Registration (OTR) which is mandatory for all UPSC applications</li>
+            <li>Read the official notification carefully before applying</li>
+            <li>Ensure you meet all eligibility criteria</li>
+            <li>Prepare scanned documents (photo, signature, ID proof)</li>
+            <li>Click on the Apply Online link below</li>
+            <li>Fill the application form carefully</li>
+            <li>Pay the application fee (if applicable)</li>
+            <li>Submit the form and take a printout for future reference</li>
+        </ol>
+        
+        <div style="text-align: center; margin: 25px 0;">
+            <a href="#" class="btn">Apply Online</a>
+            <a href="#" class="btn">Download Notification</a>
+            <a href="#" class="btn">OTR Registration</a>
+        </div>
+        
+        <h2>Important Links</h2>
+        <table>
+            <tr>
+                <td>Apply Online</td>
+                <td><a href="#">Registration | Login</a></td>
+            </tr>
+            <tr>
+                <td>OTR Registration</td>
+                <td><a href="#">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Download Notification</td>
+                <td><a href="#">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Photo Tools</td>
+                <td><a href="#">Image Resizer | Name-Date Maker</a></td>
+            </tr>
+            <tr>
+                <td>Official Website</td>
+                <td><a href="#">UPSC Official Website</a></td>
+            </tr>
+        </table>
+        
+        <div class="highlight-box">
+            <h3>Note:</h3>
+            <p>All candidates must ensure they meet the eligibility criteria before applying. The photograph must be recent (not older than 10 days) with candidate's name and date written on it. For any queries, please refer to the official notification or contact UPSC helpdesk.</p>
+        </div>
+        
+        <footer>
+            <p>© 2025 SarkariResult | All Rights Reserved</p>
+            <p style="margin-top: 10px;">
+                <a href="#">Android App</a> | 
+                <a href="#">iOS App</a> | 
+                <a href="#">Telegram Channel</a> | 
+                <a href="#">WhatsApp Updates</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

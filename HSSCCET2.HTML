@@ -14,7 +14,6 @@
             --primary-dark: #1d4ed8;
             --secondary-color: #10b981;
             --accent-color: #f59e0b;
-            --danger-color: #ef4444;
             --text-color: #1f2937;
             --text-light: #6b7280;
             --bg-color: #ffffff;
@@ -173,7 +172,6 @@
         .logo img {
             height: 40px;
             width: auto;
-            border-radius: 50%;
         }
 
         .logo-text h1 {
@@ -324,23 +322,6 @@
             color: white;
             text-align: center;
             padding: 60px 0;
-            position: relative;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 0;
-        }
-
-        .hero .container {
-            position: relative;
-            z-index: 1;
         }
 
         .hero h2 {
@@ -406,11 +387,6 @@
             border-radius: 8px;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s;
-        }
-
-        .stat-item:hover {
-            transform: translateY(-5px);
         }
 
         body.dark-mode .stat-item {
@@ -567,10 +543,6 @@
             font-weight: 600;
         }
 
-        .badge.urgent {
-            background-color: var(--danger-color);
-        }
-
         /* Main Content Cards */
         .main-content {
             display: grid;
@@ -584,11 +556,6 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .content-card:hover {
-            transform: translateY(-5px);
         }
 
         body.dark-mode .content-card {
@@ -874,95 +841,6 @@
             margin-bottom: 8px;
         }
 
-        /* New Features Section */
-        .new-features {
-            margin: 40px 0;
-        }
-
-        .features-tabs {
-            display: flex;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 20px;
-        }
-
-        body.dark-mode .features-tabs {
-            border-bottom-color: #374151;
-        }
-
-        .tab-btn {
-            padding: 10px 20px;
-            background: none;
-            border: none;
-            border-bottom: 3px solid transparent;
-            font-weight: 600;
-            color: var(--text-light);
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        body.dark-mode .tab-btn {
-            color: #9ca3af;
-        }
-
-        .tab-btn.active {
-            color: var(--primary-color);
-            border-bottom-color: var(--primary-color);
-        }
-
-        body.dark-mode .tab-btn.active {
-            color: var(--accent-color);
-            border-bottom-color: var(--accent-color);
-        }
-
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        .feature-item {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .feature-icon {
-            flex-shrink: 0;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(37, 99, 235, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary-color);
-            font-size: 1.2rem;
-        }
-
-        body.dark-mode .feature-icon {
-            background-color: rgba(37, 99, 235, 0.2);
-        }
-
-        .feature-details h4 {
-            margin-bottom: 5px;
-            color: var(--primary-color);
-        }
-
-        body.dark-mode .feature-details h4 {
-            color: var(--accent-color);
-        }
-
-        .feature-details p {
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-
-        body.dark-mode .feature-details p {
-            color: #9ca3af;
-        }
-
         /* Footer */
         footer {
             background-color: var(--primary-color);
@@ -1081,30 +959,6 @@
             transform: translateY(-3px);
         }
 
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            z-index: 99;
-            transition: all 0.3s;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
         /* Animations */
         @keyframes float {
             0% { transform: translateY(0px); }
@@ -1209,13 +1063,6 @@
             
             .feature-card {
                 padding: 20px;
-            }
-            
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 20px;
-                bottom: 70px;
             }
         }
 
@@ -1403,7 +1250,7 @@
                 <a href="#">Check Now <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="highlight-card">
-                <div class="badge urgent">Urgent</div>
+                <div class="badge">Urgent</div>
                 <h3>RRB ALP Recruitment</h3>
                 <p>Apply Online for 10,000+ Posts - Last Date Tomorrow</p>
                 <a href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
@@ -1532,79 +1379,6 @@
                     </ul>
                 </div>
                 <a href="#" class="view-more">View All Admissions <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-
-        <!-- New Features Section -->
-        <div class="new-features">
-            <h2 class="section-title">New Features</h2>
-            <div class="features-tabs">
-                <button class="tab-btn active" data-tab="tab1">Auto Form Fill</button>
-                <button class="tab-btn" data-tab="tab2">Job Alerts</button>
-                <button class="tab-btn" data-tab="tab3">Exam Planner</button>
-            </div>
-            
-            <div class="tab-content active" id="tab1">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-magic"></i>
-                    </div>
-                    <div class="feature-details">
-                        <h4>One-Click Application</h4>
-                        <p>Upload your documents once and fill all government forms automatically with just one click.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-save"></i>
-                    </div>
-                    <div class="feature-details">
-                        <h4>Document Storage</h4>
-                        <p>Securely store all your important documents in one place for quick access when needed.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tab-content" id="tab2">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-bell"></i>
-                    </div>
-                    <div class="feature-details">
-                        <h4>Personalized Alerts</h4>
-                        <p>Get instant notifications for jobs matching your profile and qualifications.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-filter"></i>
-                    </div>
-                    <div class="feature-details">
-                        <h4>Smart Filters</h4>
-                        <p>Customize alerts based on location, salary, department and other preferences.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tab-content" id="tab3">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <div class="feature-details">
-                        <h4>Exam Calendar</h4>
-                        <p>Never miss important dates with our comprehensive exam calendar and reminders.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <div class="feature-details">
-                        <h4>Progress Tracking</h4>
-                        <p>Track your preparation progress and get personalized study recommendations.</p>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -1776,11 +1550,6 @@
         <i class="fas fa-arrow-up"></i>
     </div>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
     <script>
         // Dark Mode Toggle
         const darkModeToggle = document.getElementById('darkModeToggle');
@@ -1878,24 +1647,6 @@
                         behavior: 'smooth'
                     });
                 }
-            });
-        });
-
-        // Tab functionality for new features section
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const tabId = this.getAttribute('data-tab');
-                
-                // Remove active class from all buttons and content
-                tabBtns.forEach(btn => btn.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                
-                // Add active class to clicked button and corresponding content
-                this.classList.add('active');
-                document.getElementById(tabId).classList.add('active');
             });
         });
 
